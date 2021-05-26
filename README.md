@@ -47,6 +47,8 @@ Chart.js is an open source JavaScript library on Github that allows you to draw 
 
 Submission Guidelines:
 
+Open Dashboard_Layout.html.
+
 1. The homepage contains the profile of the student and is divided into 4 frames.
 which are:
 a: Header frame: It consist of different tabs which are basically links and are targeted to the content frame.
@@ -64,6 +66,8 @@ d: Advertisement Frame: It contains a basic advertisement.
 
 Steps to Run Project:
 
+
+Primary Step : Open Dshboard_layout.pdf.
 Step 1:On the homepage click on the upcoming lessons tab to see the lessons which will come for the student.
 Step 2: Click on the tasks tab to see the upcoming tasks for the student.
         The student can select multiple tasks at a time.
