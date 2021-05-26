@@ -1,0 +1,132 @@
+<html>
+<head>
+	<link href="homepage.css" rel="stylesheet" type="text/css">
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+		<script>
+			window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+  
+  
+  title:{
+    text: "Spent Time in hours"
+  },
+  data: [{        
+    type: "line",
+        indexLabelFontSize: 16,
+    dataPoints: [
+      { y: 50 },
+      { y: 40},
+      { y: 90, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+      { y: 35 },
+      { y: 60 },
+      { y: 75 },
+      { y: 80 },
+      { y: 78 },
+      { y: 56 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+      { y: 89 },
+      { y: 74 },
+      { y: 32 }
+    ]
+  }]
+});
+chart.render();
+
+}
+</script>
+	</head>
+	<body>
+		<p><font size="6"><center><b> Your complete profile</font></b></center></p>
+		<table width="100%">
+			<tr><td width="40%">
+				<p><b><font size="4">Your Courses</font></b>&emsp;
+				<span class="span1">Passed</span></p>
+				<p><img src="profile.png" width="20" height="20" style="border-radius: 50%">&emsp;
+					<font color="grey">2 courses</font></p>
+
+					<a href="#">
+						<div >
+							<table>
+						<tr>
+							<td><p><img src="color-wheel.png" width="20" height="20">
+							</p></td>
+						<td><span><font color="green" size="3"><b>Beginner</b></font><br><b><font size="4">Art and Design</font></b></span></p>
+						</td>
+					</tr>
+				</table>
+
+						<p><font size="2" color="grey">by</font>&nbsp;<img src="teacher.png" width="20" height="20" style="border-radius: 50%">
+							&nbsp;<b><font size="3">Brad Stoinis</font></b></p>
+							<div class="skill">
+								<p>50%</p>
+								<p>50/100</p>
+								<div class="skill_level" style="width: 50%"></div>
+							</div>
+						</div>
+					</a>
+						<a href="#">
+						<div>
+							<table>
+						<tr>
+							<td><p><img src="workout.png" width="20" height="20">
+							</p></td>
+						<td><span><font color="red" size="3"><b>Advanced</b></font><br><b><font size="4">Daily Workouts</font></b></span></p>
+						</td>
+					</tr>
+				</table>
+
+						<p><font size="2" color="grey">by</font>&nbsp;<img src="teacher.png" width="20" height="20" style="border-radius: 50%">
+							&nbsp;<b><font size="3">Hoffman Stoinis</font></b></p>
+							<div class="skill">
+								<p>30%</p>
+								<p>30/100</p>
+								<div class="skill_level" style="width: 30%"></div>
+							</div>
+						</div>
+					</a>
+				</td>
+				<td width="60%">
+					<div id="chartContainer" style="height: 150px; width: 100%;">
+						<p><center><b><font size="4">Time Spent</font></b></center></p>
+					</div>
+					<div class="goals">
+						<p><font size="4"><b>Goals</font></b></center>
+                        <span class="span2"><select class="select1">
+                        	<option>Daily</option>
+                        	<option>Weekly</option>
+                        	<option>Monthly</option>
+                        	<option>Yearly</option>
+                        </select>
+                    </span>
+                </font>
+            </p>
+									<svg xmlns="https://www.w3.org/2000/svg" viewbox="0 0 50 50" width="50" height="50">
+			<circle r="21" cx="25" cy="25"
+			fill="transparent"
+			stroke="white"
+			stroke-width="8"
+			stroke-dasharray="calc(100*(3.1416*42)/100) calc(3.1416 *42)"
+			transform="rotate(-90) translate(-50)">
+		</circle>
+
+		<circle r="21" cx="25" cy="25"
+			fill="transparent"
+			stroke="#5b64f8"
+			stroke-width="8"
+			stroke-dasharray="calc(75*(3.1416*42)/100) calc(3.1416 *42)"
+			transform="rotate(-90) translate(-50)">
+		</circle>
+	</svg>
+	<p><center><font color="#5b64f8" size="5">75% completed</font></center></p>
+				</td>
+			</tr>
+		</table>
+	</body>
+	</html>
+			
+					
+			
+			
+	
+
+		

@@ -1,0 +1,111 @@
+<html>
+<head>
+	<script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.7.1/js/anychart-radar.min.js"></script>
+	<script>
+		function radio1()
+		{
+			   anychart.onDocumentReady(function () {
+        var data1 = [
+  {x: "Mat", value: 39},
+  {x: "Sci", value: 52},
+  {x: "Eng", value: 43},
+  {x: "His", value: 60},
+  {x: "Geo", value: 50},
+  {x: "Com", value: 65},
+  {x: "Arts", value: 65},
+  {x: "Bio", value: 65},
+];
+var chart = anychart.radar();
+chart.title("Starter Pokemon Comparison Chart");
+chart.yScale()
+  .minimum(0)
+  .maximum(100)
+  .ticks({'interval':20});
+chart.line(data1)
+chart.container('container');
+
+chart.draw();
+      });
+		}
+		function radio2()
+		{
+
+
+		 anychart.onDocumentReady(function () {
+        var data1 = [
+  {x: "Mat", value: 49},
+  {x: "Sci", value: 50},
+  {x: "Eng", value: 60},
+  {x: "His", value: 70},
+  {x: "Geo", value: 50},
+  {x: "Com", value: 55},
+  {x: "Arts", value: 60},
+  {x: "Bio", value: 70},
+];
+var chart = anychart.radar();
+chart.title("Subject Wise Analysis");
+chart.yScale()
+  .minimum(0)
+  .maximum(100)
+  .ticks({'interval':20});
+chart.line(data1)
+chart.container('container');
+
+chart.draw();
+      });
+		}
+		function radio3()
+		{
+
+
+		 anychart.onDocumentReady(function () {
+        var data1 = [
+  {x: "Mat", value: 50},
+  {x: "Sci", value: 50},
+  {x: "Eng", value: 80},
+  {x: "His", value: 20},
+  {x: "Geo", value: 55},
+  {x: "Com", value: 75},
+  {x: "Arts", value: 42},
+  {x: "Bio", value: 45},
+];
+var chart = anychart.radar();
+chart.title("Subject Wise Analysis");
+chart.yScale()
+  .minimum(0)
+  .maximum(100)
+  .ticks({'interval':20});
+chart.line(data1)
+chart.container('container');
+
+chart.draw();
+      });
+		}
+		function reverseradio(){
+			document.getElementById("container").innerHTML="";
+		}
+		
+	</script>
+	<style>
+		#container {
+        width: 100%;
+        height: 90%;
+        margin: 0;
+        padding: 0;
+    </style>
+	</head>
+	<body>
+		<div id="container" onblur="reverseradio()">
+			
+		</div>
+		<div>
+		<center><input type="radio" onclick="radio1()" onblur="reverseradio()" ><b><font size="5">2016</b></font>
+		<input type="radio" onclick="radio2()" onblur="reverseradio()"><font size="5"><b>2017</b></font>
+		<input type="radio" onclick="radio3()" onblur="reverseradio()"><font size="5"><b>2018</b></font>
+	</center></div>
+
+
+	</body>
+	</html>
+
